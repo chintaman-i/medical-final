@@ -1,0 +1,249 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #34d1bf;
+    padding: 20px 0;
+    position: relative;
+}
+
+.header-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center;
+    justify-content: center;
+}
+
+.header-top {
+    display: flex;
+    align-items: center; /* Align items vertically */
+    justify-content: space-between; /* Space between logo, search bar, and right-side items */
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.header-container .logo {
+    display: flex;
+    align-items: center; /* Center align items vertically */
+}
+
+.header-container .logo img {
+    height: 50px;
+    margin-right: 20px;
+}
+
+.header-container .search-bar {
+    flex-grow: 1; /* Allow search bar to take remaining space */
+    margin: 0 20px;
+}
+
+.header-container .search-bar input {
+    width: 100%; /* Adjust to full width of the container */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 16px;
+}
+
+.header-container .header-right {
+    display: flex;
+    align-items: center;
+    gap: 15px; /* Space between sign-in, sign-up, and cart */
+}
+
+.header-right a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 5px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.header-right a:hover {
+    background-color: #2ba99f;
+}
+
+.header-right .cart {
+    display: flex;
+    align-items: center;
+    gap: 5px; /* Space between cart icon and text */
+}
+
+.header-right .cart img {
+    height: 24px;
+    width: 24px;
+}
+
+.category-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.category-nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 5px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.category-nav a:hover {
+    background-color: #2ba99f;
+}
+
+.category-nav a img {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+}
+
+.promo-banner {
+    background-color: #a6cf37;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 16px;
+}
+
+.category-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+    background-color: #f4f4f4;
+    max-width: 1200px;
+    margin: 20px auto;
+}
+
+.category-item {
+    background-color: #ffffff;
+    color: #333;
+    margin: 10px;
+    padding: 20px;
+    border-radius: 00%;
+    text-align: center;
+    cursor: pointer;
+    width: 150px;
+    height: 150px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s ease;
+    text-decoration: none;
+}
+
+.category-item:hover {
+    transform: scale(1.05);
+}
+
+.category-item img {
+    height: 100px;
+    width: 100px;
+    border-radius: 0%;
+    margin-bottom: 10px;
+}
+
+.category-item h3 {
+    margin: 0;
+    font-size: 16px;
+    color: #333;
+}
+
+/* Custom colors for each category */
+.category-item.vitamins {
+    background-color: #c1e5df;
+}
+
+.category-item.shampoos {
+    background-color: #fbe7c6;
+}
+
+.category-item.orthopaedics {
+    background-color: #71e4dd;
+}
+
+.category-item.feminine {
+    background-color: #f8c1d9;
+}
+
+.category-item.ayurvedic {
+    background-color: #f5d4cf;
+}
+
+.category-item.facewash {
+    background-color: #c1e5df;
+}
+
+.category-item.creams {
+    background-color: #d8d1eb;
+}
+
+.category-item.skincare {
+    background-color: #c7eceb;
+}
+
+.category-item.grooming {
+    background-color: #d8d1eb;
+}
+
+.category-item.fitness {
+    background-color: #fbe7c6;
+}
+
+footer {
+    background-color: #f7f7f7;
+    padding: 40px 20px;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer-column {
+    flex: 1 1 30%;
+    margin: 10px;
+}
+
+.footer-column h3 {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.footer-column ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-column ul li {
+    margin-bottom: 10px;
+}
+
+.footer-column ul li a {
+    color: #555;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-column ul li a:hover {
+    color: #34d1bf;
+}

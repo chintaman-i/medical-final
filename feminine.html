@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products - Pharmacy Website</title>
+    <link rel="stylesheet" href="feminine.css">
+</head>
+<body>
+
+<header>
+    <div class="header-container">
+        <div class="logo">
+            <img src="https://via.placeholder.com/50x50?text=Logo" alt="Logo">
+            <span style="color:white;font-size: 24px;">storename</span>
+        </div>
+        <div class="header-actions">
+            <a href="index.html">Home</a>
+            <a href="signin.html" class="signin">
+                <img src="https://via.placeholder.com/24x24?text=SignIn" alt="Sign In">
+                <span>Sign In</span>
+            </a>
+            <a href="cart.html" class="cart">
+                <img src="https://via.placeholder.com/24x24?text=Cart" alt="Cart">
+                <span>Cart</span>
+            </a>
+            <a href="signup.html" class="signup">
+                <img src="https://via.placeholder.com/24x24?text=SignUp" alt="Sign Up">
+                <span>Sign Up</span>
+            </a>
+        </div>
+    </div>
+</header>
+
+<div class="main-container">
+    <div class="filters">
+        <h3>Filters</h3>
+        <input type="search" placeholder="Search brands..." id="brand-search">
+        <h4>Brands</h4>
+        <select id="brand-filter">
+            <!-- Brand options will be populated here by JavaScript -->
+        </select>
+        <h4>Manufacturers</h4>
+        <ul>
+            <li><input type="checkbox" id="manufacturer1"> <label for="manufacturer1">Manufacturer 1</label></li>
+            <li><input type="checkbox" id="manufacturer2"> <label for="manufacturer2">Manufacturer 2</label></li>
+        </ul>
+    </div>
+
+    <div class="product-container">
+        <h2>All Products</h2>
+        <div class="product-list" id="product-list">
+            <!-- Products will be loaded here -->
+        </div>
+    </div>
+</div>
+
+<!-- Link to the external JavaScript file -->
+<script src="feminine.js"></script>
+
+</body>
+</html>
